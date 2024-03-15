@@ -1,11 +1,17 @@
-header {
-    height:100px;
-background-color: rgb(116, 52, 141);
-
+header{
+    height: 100;
+    background-color: black;
+    border-bottom: rgb(246, 124, 144);
 }
 footer{
-    
-    height:100px;
+    height:100;
     background-color: blueviolet;
-
+    border-bottom: black;
+}
+.header{
+    color: white;
+}
+body{
+    margin:0;
+    padding:0;
 }
