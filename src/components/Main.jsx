@@ -30,9 +30,10 @@ export default function Main(){
       value={telefone}
       onChange={(event)=> setTelefone(event.target.value)} />
      {Number}
-     <button><enviar></enviar></button>]
+     <button><enviar></enviar></button>
      <form/>
-     
+     {nome} {telefone}
+
              </main>
     
     );
