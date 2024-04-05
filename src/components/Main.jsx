@@ -2,15 +2,24 @@
 export default function Main(){
     const [nome,setNome] = userstate("")  //(0) number // (true) boolean
     const  [telefone,setTelefone] = userstate(0)
-    const[listaContaro,setListaContatos] = useState([])
+    const[listaContato,setListaContatos] = useState([])
     
     
     const registrar = (event) =>{
         event.preventDefault();
-        alert ()
+        alert ("olá")
+        setListaContatos([...listaContato,
+{
+           nomeSalvo:nome,
+           telefoneSalvo:telefone,
+
+}
+        ])
+
      } ;
-   
-   return(  <main>
+     console.table(listaContato);
+   return( 
+     <main>
       <label htmlFor="nome">Nome:</label> 
       <input
       type="text"
@@ -21,6 +30,7 @@ export default function Main(){
    
         (event)=> setNome(event.target.value)}
       />
+
       (nome)
       <label htmlFor="nomtelefone">Telefone:</label>
       <input
@@ -31,8 +41,17 @@ export default function Main(){
       onChange={(event)=> setTelefone(event.target.value)} />
      {Number}
      <button><enviar></enviar></button>
-     <form/>
+     <form>
      {nome} {telefone}
+     <br></br>
+        
+        </form>
+        {listaContato.map((contado,index)=> <div key = {index}>
+
+              <p>contado.nomeSalvo</p>
+              <p>contado.telefoneSalvo</p>
+        </div>
+                        )}
 
              </main>
     
